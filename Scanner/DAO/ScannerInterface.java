@@ -6,6 +6,6 @@ public interface ScannerInterface {
 
 	public void saveDto(ScannerDto obj);
 	public void displayAll();
-//	public void update(ScannerDto brand);
-//	public void delete(ScannerDto price);
+	public void update(String brand,String newbrand);
+	public void delete(int price);
 }

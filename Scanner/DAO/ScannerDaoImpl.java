@@ -32,22 +32,23 @@ public class ScannerDaoImpl implements ScannerInterface{
 		}
 		
 	}
-//	@Override
-//	public void update(ScannerDto brand) {
-//		for (int i = 0; i < scanner.length; i++) {
-//			if (scanner[i].getBrand().equals(brand)) {
-//				//scanner[i].setBrand(brand);
-//			}
-//		}
-//		
-//	}
-//	@Override
-//	public void delete(ScannerDto price) {
-//		for (int i = 0; i < scanner.length; i++) {
-//			if (scanner[i].getPrice()==price) {
-//				scanner[i]=null;
-//			}
-//	}
+	@Override
+	public void update(String brand,String newbrand) {
+		for (int i = 0; i < scanner.length; i++) {
+			if (scanner[i].getBrand().equals(brand)) {
+				scanner[i].setBrand(newbrand);
+			}
+		}
+		
+	}
+	@Override
+	public void delete(int price) {
+		for (int i = 0; i < scanner.length; i++) {
+			if (scanner[i].getPrice()==price) {
+				scanner[i]=null;
+			}
+	}
 
 
+	}
 }

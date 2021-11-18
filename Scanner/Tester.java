@@ -12,6 +12,9 @@ public class Tester {
 		ScannerDto dell = new ScannerDto ("dell","black",35000,"colour",25);
 		scanner.saveDto(dell);
 		scanner.displayAll();
+		scanner.update("hp", "hp v2");
+		
+	
 
 	}
 
